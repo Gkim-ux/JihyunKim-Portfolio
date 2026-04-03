@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jihyun Kim Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Text', serif;
+            color: #ffffff;
+            background-color: #212121;
+            padding: 20px;
+            line-height: 1.6;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 0;
+        }
+
+        .menu {
+            display: flex;
+            gap: 15px;
+        }
+
+        .menu a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 40px;
+        }
+
+        .hero h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        .about-section {
+            margin-top: 100px;
+        }
+
+        .portfolio-section {
+            margin-top: 100px;
+        }
+
+        /* Portfolio Item Styling */
+        .portfolio-item {
+            margin-bottom: 40px;
+            overflow: hidden; /* Clearfix for floated images */
+        }
+
+        .portfolio-item img {
+            width: 200px; /* Consistent size for thumbnails */
+            height: auto;
+            border: 2px solid #333;
+            float: left;
+            margin-right: 20px;
+            margin-bottom: 10px;
+        }
+
+        .portfolio-item h4 {
+            color: #ffffff;
+            margin-top: 10px;
+            text-transform: uppercase;
+        }
+
+        .contact-section {
+            margin-top: 100px;
+            padding: 20px;
+            background-color: #353535;
+            border-radius: 8px;
+        }
+
+        .contact-section input,
+        .contact-section textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #444;
+            background-color: #2b2b2b;
+            color: white;
+            border-radius: 8px;
+        }
+
+        .contact-section button {
+            padding: 10px 20px;
+            background-color: #555;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 100px;
+            padding-bottom: 20px;
+            color: #aaaaaa;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <h2>K⋆M</h2>
+        </div>
+        <nav class="menu">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <h1>Inspire through creativity, impact through design.</h1>
+        <img src="Image/4DC5FAF5-4E2B-4730-8037-1BE9112757FC.JPG" style="width: 300px; height: auto; border-radius: 5px;" alt="Main Profile">
+        <p>Hi! My name is Jihyun Kim, a graphic designer from Toronto, Canada.</p>
+    </section>
+
+    <section id="about" class="about-section">
+        <h2>About</h2>
+        <p>Hi! My name is Jihyun Kim, a graphic designer from Toronto, Canada,
+currently studying at George Brown College, where I am majoring in
+graphic design. My journey into this field began in high school during
+a Careers class, where I chose graphic design for a research project.
+Having always been passionate about art, I felt an instant connection,
+and graphic design quickly became my focus.
+In my last two years of high school, I dove into various art courses,
+including visual arts and communication technology. These classes
+introduced me to essential tools like Photoshop, Illustrator, and
+InDesign, providing a strong foundation for my growth as a designer.
+While the focus then was introductory, these experiences sparked a
+passion that I’ve been nurturing ever since, driving me to transform
+my love for design into a meaningful career.</p>
+    </section>
+
+    <section id="portfolio" class="portfolio-section">
+        <h2>Portfolio</h2>
+
+        <div class="portfolio-item">
+            <img src="Image/AA.jpg" alt="Template">
+            <h4>Templelet</h4>
+            <p>The design of the event poster artfully captures excitement through various strategic
+elements. Employing a well-balanced composition and judicious negative space usage, not
+only enhances visual appeal but also directs focus towards crucial event details.</p>
+            
+        </div>
+
+        <div class="portfolio-item">
+            <img src="Image/BB.jpg" alt="Typographic">
+            <h4>Typographic</h4>
+            <p>The objective of this project is to develop an awareness of the process of making letters and how the tools that make them help to create the shape and forms they take. </p>
+    
+        </div>
+
+        <div class="portfolio-item">
+            <img src="Image/CC.jpg" alt="Booklet">
+            <h4>Poster</h4>
+            <p>The background of the organization involves a commitment to promoting urban gardening as a means of mitigating and adapting to the impacts of climate change. </p>
+          
+        </div>
+
+        <div class="portfolio-item">
+            <img src="Image/DD.jpg" alt="Poster">
+            <h4>Booklet</h4>
+            <p>The poster under examination presents an intricate blend of design elements, strategically
+orchestrated to evoke specific emotions and capture the audience's attention. Through a
+detailed analysis of its use of color, illustrations, typography, negative space, proportion, and
+emphasis.</p>
+            
+        </div>
+
+        <div class="portfolio-item">
+            <img src="Image/EE.jpg" alt="New Project">
+            <h4>Magazine</h4>
+            <p>Magazine coverdevelop illustrations for a feature story for a magazine publication. Students will create an illustration for the front cover of the magazine and the feature story’s opening two page spread.</p>
+           
+        </div>
+
+    </section>
+
+    <section id="contact" class="contact-section">
+        <h2>Contact</h2>
+        <form action="#" method="post">
+            <input type="text" placeholder="Your name" required>
+            <input type="email" placeholder="Your email" required>
+            <textarea rows="4" placeholder="Tell me about your project" required></textarea>
+            <button type="submit">Send →</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>Email: kjh0320219k@gmail.com</p>
+        <p>Instagram: ji._____.k</p>
+        <p>&copy; 2026 Jihyun Kim</p>
+    </footer>
+
+</body>
+</html>
